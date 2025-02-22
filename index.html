@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Library 2025</title>
+</head>
+<body>
+    <!-- Add Book button -->
+    <button id="add-book-button">Add Book</button>
+    <!-- Form -->
+     <div class="form-container">
+        <form id="book-form">
+            <fieldset>
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" name="title" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" min="1" required>
+            </fieldset>
+
+            <fieldset>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="read" name="read">
+                    <label for="read">Read</label>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Add</button>
+        </form>
+     </div>
+    
+    <div id="library-container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
